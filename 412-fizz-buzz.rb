@@ -1,0 +1,15 @@
+def fizz_buzz(n)
+    result = []
+    (1..n).each do |num|
+        if num % 15 == 0
+            result << "FizzBuzz"
+        elsif num % 3 == 0
+            result << "Fizz"
+        elsif num % 5 == 0
+            result << "Buzz"
+        else
+            result << num.to_s
+        end
+    end
+    result
+end
